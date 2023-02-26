@@ -1,0 +1,15 @@
+#Rules{
+    background-color: white;
+    
+}
+#submit-button{
+    display: none !important;
+}
+
+#accept{
+    border-radius: 2px !important;
+    display: block;
+    z-index: 1;
+    margin: 200px;
+    width: 100%;
+}

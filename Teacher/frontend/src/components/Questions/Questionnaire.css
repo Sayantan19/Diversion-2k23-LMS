@@ -1,0 +1,21 @@
+.forms {
+    margin: 10px;
+    /* padding: 10px; */
+}
+
+#tag{
+    border: 2px solid black;
+    font-family: 'Rajdhani';
+    border-radius: 3px;
+}
+
+input{
+    background-color: white !important;    
+}
+
+#submit-but{
+    border: 2px solid black;
+    font-family: 'Rajdhani';
+    padding: 5px;
+    border-radius: 3px;
+}

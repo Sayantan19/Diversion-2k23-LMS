@@ -1,0 +1,11 @@
+#summary-body
+{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10em auto;
+    padding: 2em;
+    width: 100%;
+    border-radius: 10px;
+}

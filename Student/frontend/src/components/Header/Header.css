@@ -1,0 +1,40 @@
+#Head {
+    display: flex;
+    position: static;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+}
+
+#heading {
+    display: flex;
+    /* color: white; */
+    width: 100%;
+    /* border: 2px solid green; */
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Mulish';
+}
+
+#timer {
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: sans-serif;
+    /* display: flex; */
+    /* padding: 10px; */
+    width: 30%;
+    border-radius: 30px;
+    background: white;
+    font-size: 36px;
+    font-weight: bold;
+    /* margin-left: 2%; */
+    justify-content: center;
+  }
+  
