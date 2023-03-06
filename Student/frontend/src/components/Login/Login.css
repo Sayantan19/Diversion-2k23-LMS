@@ -1,33 +1,52 @@
-#login-box{
-    background-color: white;
-    width: 30em;
-    height: 30em;
-    border-radius: 5px;
-    box-shadow: 0px 0px 16px 9px #2219198a;
-}
+/*New style*/
 
-#inner-box{
-    width: 70%;
-    /* box-shadow: 0px 0px 16px 0px; */
-}
-
-#profile-icon{ 
-    width: 3em;
-    height: 4em;
-    background-color: #d7d6d6 !important;
-    padding: 0.5em 2em;
-    border-radius: 50%;
-}
-
-.bi-person
-{
-    margin: 15px -7px;
-}
-
-.cred{
+.cred {
     margin-bottom: 10px;
+    width: 100%;
     border-top: none;
     border-left: none;
     border-right: none;
     padding-bottom: 5px;
+}
+
+.account-block {
+    padding: 0;
+    background-image: url(https://bootdey.com/img/Content/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.account-block .overlay {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+.account-block .account-testimonial {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+
+.text-theme {
+    color: #000000 !important;
+}
+
+
+#login-box{
+    display:flex;
 }

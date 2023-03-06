@@ -123,7 +123,7 @@ export default function sketch(p) {
                                     }).catch(console.log("Fraud case"));
                             }
                         }
-                        console.log('Times Cheated:', cheatInstance.length - 1)
+                        // console.log('Times Cheated:', cheatInstance.length - 1)
                         errorcount = 0;
                         p.rect(drawing.bbox[0], drawing.bbox[1], drawing.bbox[2], drawing.bbox[3]);
                     }
