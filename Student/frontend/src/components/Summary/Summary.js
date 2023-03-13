@@ -42,7 +42,6 @@ class Summary extends Component {
     render() {
         const { score } = this.state
         const {time} = this.state
-        const { user } = this.props.auth;
 
         return (
             <>

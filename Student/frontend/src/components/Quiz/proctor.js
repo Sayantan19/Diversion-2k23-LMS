@@ -1,6 +1,4 @@
 import * as faceapi from 'face-api.js'
-import * as tf from '@tensorflow/tfjs';
-// import * as faceapi from './face-api.min.js' 
 import axios from 'axios';
 import { accessCurrentUser } from '../../actions/authActions';
 
