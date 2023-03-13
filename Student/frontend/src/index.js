@@ -4,6 +4,8 @@ import './index.css';
 import App from './App.js';
 import reportWebVitals from './reportWebVitals.js';
 import { BrowserRouter } from 'react-router-dom';
+import * as serviceWorker from './components/Quiz/serviceWorker';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +15,9 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+serviceWorker.register();
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -1,6 +1,6 @@
 {
     "Question_settings": {
-        "questiontime": "30",
+        "questiontime": "1000000",
         "quizquestions": "3"
     },
     "quizData": [

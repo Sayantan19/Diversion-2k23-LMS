@@ -29,10 +29,11 @@ export default function logic() {
         // console.log(data);
         axios.post('/api/results/result', data)
             .then(function (response) {
+                console.log(response.data)
                 if (response.status !== 200) {
                     console.log('Error', response.status);
                 }
-                else if (response.data === 'Fraud Case') {
+                else if (response.data === 'Fraud case') {
                     alert('Congratulations on wasting your time giving the exam again!');
                     window.location.href = '/summary';
                 }
