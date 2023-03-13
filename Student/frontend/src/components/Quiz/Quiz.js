@@ -1,8 +1,6 @@
 import { React, useEffect } from 'react';
 import './Quiz.css';
 import { accessCurrentUser } from '../../actions/authActions';
-import P5Wrapper from 'react-p5-wrapper';
-import objectDetectionSketch from './ObjectDetectionSketch';
 import logic from './logic';
 import proctor from './proctor'
 
