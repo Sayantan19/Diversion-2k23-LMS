@@ -21,7 +21,7 @@ class Summary extends Component {
         }
         axios.post("/api/results/display", dat)
             .then(response => {
-                console.log('Result: ' + response.status)
+                console.log('Result: ' + response.data)
                 // console.log("Response: " + JSON.stringify(response.data))
                 this.setState({ score: response.data.score })
                 this.setState({ time: response.data.time })

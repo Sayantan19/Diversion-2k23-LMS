@@ -8,10 +8,9 @@ const ResultSend = (req, res) => {
         console.log('\n');
         // res.sendStatus(200);
         const id = req.body.id;
-        var objectId = mongoose.Types.ObjectId(id);
-        console.log(objectId, '\n');
+        const query = { _id: id };
         // Find user by email
-        User.findOne(objectId)
+        User.findOne(query)
             .then(user => {
                 console.log(user);
                 const name = user.name;
@@ -31,28 +30,32 @@ const ResultSend = (req, res) => {
                                 time: req.body.time
                             })
                             newResult.save()
-                            .then(result => res.json(result))
-                                .catch(err => { console.log(err); res.send(err.message)});
-                            }
+                                .then(result => res.json(result))
+                                .catch(err => { console.log(err); res.send(err.message) });
+                        }
                     })
             })
             .catch(response =>
-                console.log('error'))
-            }
+                console.log(response))
+    }
     else
         console.log(req.status)
 }
 
 const Display = (req, res) => {
     if (res) {
-        console.log(req.body)
         const id = req.body.id;
-        var objectId = mongoose.Types.ObjectId(id);
-        Result.findOne(objectId)
-            .then(result => {
-                console.log(result)
-                const data = JSON.stringify(result)
-                res.send(data)
+        const query = { _id: id }
+        User.findOne(query)
+            .then(user => {
+                const e = user.email;
+                const query1 = {email: e}
+                Result.findOne(query1)
+                    .then(result => {
+                        const data = JSON.stringify(result)
+                        res.send(data)
+                    })
+                    .catch(response =>{console.log(response)})
             })
     }
     else

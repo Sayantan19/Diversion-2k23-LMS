@@ -4,26 +4,32 @@ import { accessCurrentUser } from '../../actions/authActions';
 import P5Wrapper from 'react-p5-wrapper';
 import objectDetectionSketch from './ObjectDetectionSketch';
 import logic from './logic';
-// import proctor from './proctor'
+import proctor from './proctor'
 
 
 accessCurrentUser();
 export default function Quiz() {
     useEffect(() => {
         return () => {
-            // proctor()
+            proctor()
+        };
+    }, []);
+    useEffect(() => {
+        return () => {
             logic()
         };
     }, []);
 
     return (
         <>
-            <P5Wrapper sketch={objectDetectionSketch} style={{display:'none'}}/>
+            <div id='vidcont'>
+                <video id='video' width='280' height='210' autoPlay={true} muted />
+            </div>
             <div className="container" id="time">
                 <div id="timer" name="timer">
                     <span>Time Left: 30:00</span>
                 </div>
-                <div id="cheat">
+                <div id="cheat" style={{ margin: '1em' }}>
                     <span>Times cheated: 0</span>
                 </div>
             </div>
