@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css'
 
+//Footer component
 export default function Footer() {
     return (
         <>
