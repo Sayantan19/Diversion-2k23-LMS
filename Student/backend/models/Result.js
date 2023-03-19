@@ -1,3 +1,4 @@
+// This file is for creating the result schema for validation from the DB
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 // Create Schema

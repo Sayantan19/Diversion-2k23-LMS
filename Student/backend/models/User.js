@@ -1,3 +1,4 @@
+//This file creates the User schema for validating with the DB for User authentication
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 // Create Schema

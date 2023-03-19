@@ -10,6 +10,7 @@ const validateLoginInput = require("../validation/login");
 const bcrypt = require("bcryptjs");
 const validateRegisterInput = require("../validation/register");
 
+//This function is for Signing in the user
 const SignIn = async (req, res) => {
     // Form validation
     const { errors, isValid } = validateLoginInput(req.body);
@@ -58,6 +59,7 @@ const SignIn = async (req, res) => {
         });
 }
 
+//This function is for registering the user
 const Register = (req, res) => {
     // Form validation
     const { errors, isValid } = validateRegisterInput(req.body);

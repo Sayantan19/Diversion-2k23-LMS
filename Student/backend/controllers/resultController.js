@@ -1,12 +1,13 @@
+//This is the result controller. What this part does is to submit the quiz and display the results of the people who attempted the exam/quiz
+
+
 const User = require("../models/User");
 const Result = require('../models/Result');
-const mongoose = require('mongoose');
 
 const ResultSend = (req, res) => {
 
     if (res) {
         console.log('\n');
-        // res.sendStatus(200);
         const id = req.body.id;
         const query = { _id: id };
         // Find user by email

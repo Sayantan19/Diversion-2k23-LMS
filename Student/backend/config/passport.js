@@ -1,3 +1,5 @@
+//This will help us to create a JWT token for login and authentication
+
 const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 const mongoose = require("mongoose");
